@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Français - K.P Languages</title>
+    <title>French - K.P Languages</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -14,52 +15,55 @@
                 <h1>K.P Languages</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="../../index.html">Accueil</a></li>
-                <li><a href="../about.html">À propos</a></li>
-                <li><a href="../progress.html">Progrès</a></li>
-                <li><a href="index.html">Français</a></li>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../pages/about.html">About</a></li>
+                <li><a href="../../pages/progress.html">Progress</a></li>
+                <li><a href="#french">French</a></li>
             </ul>
             <div class="dark-mode-toggle">
-                <label for="dark-mode" title="Basculer en Mode Sombre"><i class="fas fa-moon"></i></label>
+                <label for="dark-mode" title="Toggle Dark Mode"><i class="fas fa-moon"></i></label>
                 <input type="checkbox" id="dark-mode">
             </div>
         </nav>
     </header>
 
-    <main>
+    <main id="french">
         <section class="hero">
-            <h2>Apprendre le Français</h2>
-            <p>Maîtrisez la langue de Molière avec des outils interactifs alimentés par IA.</p>
+            <h2>Learn French</h2>
+            <p>Embrace romance and elegance with interactive lessons.</p>
         </section>
 
         <section class="lesson-sections">
-            <div class="section-card" onclick="window.location.href='grammar.html'">
-                <i class="fas fa-book"></i>
-                <h3>Grammaire</h3>
-                <p>Apprenez les règles de base du français</p>
-            </div>
-            <div class="section-card" onclick="window.location.href='vocabulary.html'">
-                <i class="fas fa-language"></i>
-                <h3>Vocabulaire</h3>
-                <p>Élargissez votre vocabulaire avec de nouveaux mots</p>
-            </div>
-            <div class="section-card" onclick="window.location.href='conversation.html'">
-                <i class="fas fa-comments"></i>
-                <h3>Conversation</h3>
-                <p>Pratiquez des conversations réelles avec l'IA</p>
-            </div>
-            <div class="section-card" onclick="window.location.href='quiz.html'">
-                <i class="fas fa-brain"></i>
-                <h3>Quiz</h3>
-                <p>Testez vos connaissances</p>
+            <div class="container">
+                <div class="section-card" onclick="window.location.href='grammar.html'">
+                    <i class="fas fa-book"></i>
+                    <h3>Grammar</h3>
+                    <p>Learn French grammar rules and structures.</p>
+                </div>
+                <div class="section-card" onclick="window.location.href='vocabulary.html'">
+                    <i class="fas fa-language"></i>
+                    <h3>Vocabulary</h3>
+                    <p>Build your French vocabulary with words, audio, and images.</p>
+                </div>
+                <div class="section-card" onclick="window.location.href='conversation.html'">
+                    <i class="fas fa-comments"></i>
+                    <h3>Conversation Practice</h3>
+                    <p>Practice speaking French with AI-powered conversations.</p>
+                </div>
+                <div class="section-card" onclick="window.location.href='quiz.html'">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>Quizzes</h3>
+                    <p>Test your knowledge and earn points and badges.</p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 K.P Languages. Développé par KING PABLO.</p>
+        <p>&copy; 2023 K.P Languages. Developed by KING PABLO.</p>
     </footer>
 
+    <!-- JS -->
     <script src="../../js/app.js"></script>
 </body>
 </html>
