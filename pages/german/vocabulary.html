@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deutsches Vokabular - K.P Languages</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>K.P Languages</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Startseite</a></li>
+                <li><a href="../about.html">Über uns</a></li>
+                <li><a href="../progress.html">Fortschritt</a></li>
+                <li><a href="index.html">Deutsch</a></li>
+            </ul>
+            <div class="dark-mode-toggle">
+                <label for="dark-mode" title="Dunkelmodus umschalten"><i class="fas fa-moon"></i></label>
+                <input type="checkbox" id="dark-mode">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Deutsches Vokabular</h2>
+            <p>Lernen Sie neue Wörter und erweitern Sie Ihren Wortschatz.</p>
+        </section>
+
+        <section class="content">
+            <div class="container">
+                <div class="vocab-grid">
+                    <div class="vocab-card">
+                        <img src="https://via.placeholder.com/100x100?text=Hallo" alt="Hallo">
+                        <h4>Hallo</h4>
+                        <p>Hello</p>
+                        <button class="audio-btn" onclick="speak('Hallo')" title="Hallo anhören"><i class="fas fa-volume-up"></i></button>
+                    </div>
+                    <div class="vocab-card">
+                        <img src="https://via.placeholder.com/100x100?text=Danke" alt="Danke">
+                        <h4>Danke</h4>
+                        <p>Thank you</p>
+                        <button class="audio-btn" onclick="speak('Danke')" title="Danke anhören"><i class="fas fa-volume-up"></i></button>
+                    </div>
+                    <div class="vocab-card">
+                        <img src="https://via.placeholder.com/100x100?text=Bitte" alt="Bitte">
+                        <h4>Bitte</h4>
+                        <p>Please</p>
+                        <button class="audio-btn" onclick="speak('Bitte')" title="Bitte anhören"><i class="fas fa-volume-up"></i></button>
+                    </div>
+                    <div class="vocab-card">
+                        <img src="https://via.placeholder.com/100x100?text=Auf+Wiedersehen" alt="Auf Wiedersehen">
+                        <h4>Auf Wiedersehen</h4>
+                        <p>Goodbye</p>
+                        <button class="audio-btn" onclick="speak('Auf Wiedersehen')" title="Auf Wiedersehen anhören"><i class="fas fa-volume-up"></i></button>
+                    </div>
+                    <div class="vocab-card">
+                        <img src="https://via.placeholder.com/100x100?text=Wasser" alt="Wasser">
+                        <h4>Wasser</h4>
+                        <p>Water</p>
+                        <button class="audio-btn" onclick="speak('Wasser')" title="Wasser anhören"><i class="fas fa-volume-up"></i></button>
+                    </div>
+                    <div class="vocab-card">
+                        <img src="https://via.placeholder.com/100x100?text=Essen" alt="Essen">
+                        <h4>Essen</h4>
+                        <p>Food</p>
+                        <button class="audio-btn" onclick="speak('Essen')" title="Essen anhören"><i class="fas fa-volume-up"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 K.P Languages. Entwickelt von KING PABLO.</p>
+    </footer>
+
+    <script src="../../js/app.js"></script>
+    <script>
+        function speak(word) {
+            const utterance = new SpeechSynthesisUtterance(word);
+            utterance.lang = 'de-DE'; // German (Germany)
+            window.speechSynthesis.speak(utterance);
+        }
+    </script>
+</body>
+</html>

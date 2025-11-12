@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Français - K.P Languages</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>K.P Languages</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a href="../about.html">À propos</a></li>
+                <li><a href="../progress.html">Progrès</a></li>
+                <li><a href="index.html">Français</a></li>
+            </ul>
+            <div class="dark-mode-toggle">
+                <label for="dark-mode" title="Basculer en Mode Sombre"><i class="fas fa-moon"></i></label>
+                <input type="checkbox" id="dark-mode">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Quiz de Français</h2>
+            <p>Testez vos connaissances et gagnez des points.</p>
+        </section>
+
+        <section class="content">
+            <div class="container">
+                <div id="quiz-container">
+                    <div id="question-container">
+                        <h3 id="question">La question apparaîtra ici</h3>
+                        <div id="options"></div>
+                    </div>
+                    <div id="result-container" style="display: none;">
+                        <h3>Quiz Terminé !</h3>
+                        <p id="score">Votre score : </p>
+                        <p id="feedback"></p>
+                        <button id="retry-btn">Réessayer</button>
+                    </div>
+                    <div class="quiz-info">
+                        <p>Question <span id="current-question">1</span> sur <span id="total-questions">10</span></p>
+                        <p>Score : <span id="current-score">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 K.P Languages. Développé par KING PABLO.</p>
+    </footer>
+
+    <script src="../../js/app.js"></script>
+    <script src="../../js/quiz.js"></script>
+</body>
+</html>

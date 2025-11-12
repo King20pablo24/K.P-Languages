@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Vocabulary - K.P Languages</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>K.P Languages</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../progress.html">Progress</a></li>
+                <li><a href="index.html">English</a></li>
+            </ul>
+            <div class="dark-mode-toggle">
+                <label for="dark-mode" title="Toggle Dark Mode"><i class="fas fa-moon"></i></label>
+                <input type="checkbox" id="dark-mode">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>English Vocabulary</h2>
+            <p>Expand your English vocabulary with interactive words.</p>
+        </section>
+
+        <section class="content">
+            <div class="container">
+                <div class="vocab-grid">
+                    <div class="vocab-card">
+                        <img src="https://via.placeholder.com/150?text=Apple" alt="Apple">
+                        <h4>Apple</h4>
+                        <p>/ˈæp.əl/</p>
+                        <button class="audio-btn" onclick="playAudio('apple')" title="Play pronunciation for Apple"><i class="fas fa-volume-up"></i></button>
+                    </div>
+                    <div class="vocab-card">
+                        <img src="https://via.placeholder.com/150?text=Book" alt="Book">
+                        <h4>Book</h4>
+                        <p>/bʊk/</p>
+                        <button class="audio-btn" onclick="playAudio('book')" title="Play pronunciation for Book"><i class="fas fa-volume-up"></i></button>
+                    </div>
+                    <div class="vocab-card">
+                        <img src="https://via.placeholder.com/150?text=House" alt="House">
+                        <h4>House</h4>
+                        <p>/haʊs/</p>
+                        <button class="audio-btn" onclick="playAudio('house')" title="Play pronunciation for House"><i class="fas fa-volume-up"></i></button>
+                    </div>
+                    <div class="vocab-card">
+                        <img src="https://via.placeholder.com/150?text=Water" alt="Water">
+                        <h4>Water</h4>
+                        <p>/ˈwɔː.tər/</p>
+                        <button class="audio-btn" onclick="playAudio('water')" title="Play pronunciation for Water"><i class="fas fa-volume-up"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 K.P Languages. Developed by KING PABLO.</p>
+    </footer>
+
+    <script src="../../js/app.js"></script>
+    <script>
+        function playAudio(word) {
+            // Simulate audio playback (in a real app, this would play actual audio files)
+            alert(`Playing pronunciation for: ${word}`);
+        }
+    </script>
+</body>
+</html>
