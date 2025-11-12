@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deutsche Konversation - K.P Languages</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>K.P Languages</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Startseite</a></li>
+                <li><a href="../about.html">Über uns</a></li>
+                <li><a href="../progress.html">Fortschritt</a></li>
+                <li><a href="index.html">Deutsch</a></li>
+            </ul>
+            <div class="dark-mode-toggle">
+                <label for="dark-mode" title="Dunkelmodus umschalten"><i class="fas fa-moon"></i></label>
+                <input type="checkbox" id="dark-mode">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Konversation auf Deutsch</h2>
+            <p>Üben Sie echte Gespräche mit KI.</p>
+        </section>
+
+        <section class="content">
+            <div class="container">
+                <div class="chat-container">
+                    <div id="chat-messages">
+                        <div class="message ai-message">
+                            <p>Hallo! Ich bin Ihr Konversationsassistent auf Deutsch. Wie heißen Sie?</p>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="user-input" placeholder="Geben Sie Ihre Nachricht ein...">
+                        <button onclick="sendMessage()">Senden</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 K.P Languages. Entwickelt von KING PABLO.</p>
+    </footer>
+
+    <script src="../../js/app.js"></script>
+    <script src="../../js/conversation.js"></script>
+</body>
+</html>
